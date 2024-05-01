@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #f0f8ff;
+    --purple: #8a2be2;
+    --green: #228b22;
+    --blue: #0000ff;
+    --cadet: #5f9ea0;
+}
+
+html {
+    background-image: url(cuaderno.avif);
+    background-repeat: no-repeat;
+}
+
+body {
+    margin-top: 30vh;
+    font-size: 68%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+h1 {
+    width: fit-content;
+    margin: -100px auto 40px;
+    text-shadow: 10px 10px 10px var(--green);
+}
+
+header {
+    margin: 30px auto 15px;
+    width: fit-content;
+
+}
+
+label {
+    font-size: 1rem;
+    color: var(--);
+    color: var(--cadet);
+}
+
+input {
+    margin: 0 5px 0 5px;
+    color: var(--cadet);
+    height: 30px;
+    background-color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid var(--white)
+}
+
+::placeholder {
+    color: var(--green);
+}
+
+button {
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--green);
+    transition: all 0.5s ease-in-out;
+}
+
+fieldset {
+    background-color: var(--blue);
+    margin: 0 auto 15px;
+    padding: 30px;
+    width: 50vw;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 60px;
+    box-shadow: 5px 5px 10px 0px var(--purple);
+}
+
+legend {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--white);
+}
+
+#result {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+h2 {
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+#meaning {
+    font-size: 0.9rem;
+    width: 50vw;
+    margin-top: 10px;
+    letter-spacing: 0.1rem;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: all 1s ease;
+    background-color: var(--green);
+    border-radius: 5px;
+}
+
+h2:hover+#meaning {
+    visibility: visible;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+@media screen and (min-width:1000px) {
+    html {
+        background-size: cover;
+    }
+}

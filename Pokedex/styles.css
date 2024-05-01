@@ -1,0 +1,161 @@
+:root {
+    --main-font: "Jacquard 12 Charted";
+    --secondary-font: "Jersey 10";
+    --primary-color: #0000ff;
+    --secondary-color: #f5f5f5;
+    --third-color: darkturquoise;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 68%;
+    font-family: var(--secondary-font);
+    list-style: none;
+}
+
+html {
+    background: url(pokedex.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: inline-block;
+    width: fit-content;
+    font-family: var(--main-font);
+    color: var(--primary-color);
+    font-size: 5rem;
+    background-color: var(--secondary-color);
+    font-weight: 400;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+fieldset {
+    border: var(--third-color) 4px solid;
+    border-radius: 5% 10% 10% 5%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    text-align: center;
+}
+
+span {
+    font-family: var(--main-font);
+    font-size: 2.3rem;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+}
+
+li {
+    background-color: black;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    color: var(--secondary-color);
+    font-size: 3rem;
+    margin-left: 5px;
+}
+
+p {
+    color: var(--third-color);
+    font-size: 2.5rem;
+    margin-left: 5px;
+}
+
+input {
+    font-size: 2.5rem;
+}
+
+button {
+    font-size: 2.5rem;
+}
+
+ul {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i"
+    "j k l"
+    "m m m"
+    "n n n"
+    "o o o"
+    "p p p"
+    "q q q"
+    "r r r";
+}
+
+ul li:first-child {
+    grid-area: a;
+}
+
+ul li:nth-child(2) {
+    grid-area: c;
+}
+
+ul div:nth-child(3) {
+    grid-area: e;
+    justify-self: baseline;
+}
+
+ul div > img {
+    width: 200%;
+    height: auto;
+}
+
+ul li:nth-child(4) {
+    grid-area: g;
+    margin-bottom: 20px;
+}
+
+ul li:nth-child(5) {
+    grid-area: i;
+}
+
+ul li:nth-child(6) {
+    grid-area: d;
+    margin-bottom: 20px;
+}
+
+ul li:nth-child(7) {
+    grid-area: m;
+}
+
+ul li:nth-child(8) {
+    grid-area: n;
+}
+
+ul li:nth-child(9) {
+    grid-area: o;
+}
+
+ul li:nth-child(10) {
+    grid-area: p;
+}
+
+ul li:nth-child(11) {
+    grid-area: q;
+}
+
+ul li:last-child {
+    grid-area: r;
+}

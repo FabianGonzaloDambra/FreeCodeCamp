@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Single Day', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 2rem;
+}
+
+header {
+  display: flex;
+  background-color: rgba(105, 42, 42, 0.8);
+  align-items: center;
+}
+
+header img {
+  width: 10%;
+  height: 10%;
+  min-width: 40px;
+}
+
+h1,
+h2 {
+  font-family: "Rubik Doodle Shadow";
+  padding-top: 10px;
+}
+
+h1 {
+  color: #228b22;
+  background: linear-gradient(to right, red, yellow);
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+}
+
+#menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 3px 50px 0 0;
+  color: aquamarine;
+  opacity: 0;
+  visibility: hidden;
+  color: aquamarine;
+}
+
+nav {
+  margin: 1px;
+  width: 100%;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 1s linear, visibility 1s linear;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+a:hover {
+  background-color: #adff2f;
+  color: rgb(165, 42, 42);
+}
+
+h2 {
+  color: rgb(165, 42, 42)
+}
+
+section:nth-child(1) {
+  background-color: rgba(105, 42, 42, 0.6);
+}
+
+section:nth-child(2) {
+  background-color: rgba(105, 42, 42, 0.8);
+}
+
+section:nth-child(2)>h2 {
+  color: #000000;
+}
+
+section:nth-child(3) {
+  background-color: rgba(105, 42, 42, 0.6);
+}
+
+section iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+main img {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10%;
+}
+
+section p {
+  font-weight: 900;
+  font-size: 3rem;
+  font-style: oblique;
+}
+
+section:nth-child(4) {
+  background-color: rgba(105, 42, 42, 0.8);
+}
+
+fieldset {
+  margin: auto;
+  width: 30%;
+}
+
+::placeholder {
+  color: rgb(165, 42, 42)
+}
+
+input[type="email"] {
+  background-color: #e7da23;
+}
+
+input[type="submit"] {
+  background-color: #228b22;
+}
+
+input[type="submit"]:hover {
+  background-color: #adff2f;
+}
+
+footer {
+  background-color: rgba(105, 42, 42, 0.6);
+}
+
+
+@media screen and (max-width: 600px) {
+
+  ul {
+    width: fit-content;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s linear, visibility 1s linear;
+    position: absolute;
+    right: 0;
+    display: none;
+  }
+
+  #menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 3px 50px 0 0;
+    color: aquamarine;
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    transition: opacity 1s linear, visibility 1s linear;
+  }
+
+  #menu:hover+ul {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s linear, visibility 1s linear;
+    display: block;
+    background-color: rgba(105, 42, 42, 0.8);
+  }
+
+  ul:hover {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    background-color: rgba(105, 42, 42, 0.8);
+  }
+}

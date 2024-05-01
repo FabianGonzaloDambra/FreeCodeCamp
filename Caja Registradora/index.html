@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja Registradora</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header><h1>Caja Registradora</h1></header>
+    <main>
+        <div id="change-due"></div>
+        <fieldset>
+            <legend><h2>Ingrese su dinero</h2></legend>
+                <label for="price"><input type="number" min="0" value="0" id="price" placeholder="Precio">Precio</label>
+                <label for="cash"><input type="number" min="0" value="0" id="cash" placeholder="Pago">Pago</label>
+                <button id="purchase-btn">Comprar</button>
+        </fieldset>    
+    </main>
+    <footer>
+        <ul id="cid"></ul>
+    </footer>
+    <div id="img1"><img src="abierta.png" id="abierta" alt="Caja registradora abierta"></div>
+    <div id="img2"><img src="cerrada.png" id="cerrada" alt="Caja registradora cerrada"></div>
+</body>
+</html>

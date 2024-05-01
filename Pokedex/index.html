@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokeapi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="prueba.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Jersey+10&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Pokedex</h1>
+    <main>
+        <fieldset>
+            <legend><span>Ingrese nombre del pokemon o número de la pokedex nacional</span></legend>
+            <label for="search-input">
+                <input type="text" id="search-input" class="search-input" placeholder="Pokemon" required>
+            </label>
+            <button id="search-button" class="search-button">Buscar</button>
+        </fieldset>
+    </main>
+    <aside>
+        <ul>
+            <li id="pokemon-name"></li>
+            <li id="pokemon-id"></li>
+            <div id="sprites"></div>
+            <li id="height"></li>
+            <li id="weight"></li>
+            <li id="types"></li>
+            <li id="hp"></li>
+            <li id="attack"></li>
+            <li id="defense"></li>
+            <li id="special-attack"></li>
+            <li id="special-defense"></li>
+            <li id="speed"></li>
+        </ul>
+    </aside>
+</body>
+
+</html>

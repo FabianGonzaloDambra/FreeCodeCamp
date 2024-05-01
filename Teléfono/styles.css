@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url(telefono.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: "Ojuju", sans-serif;
+    font-size: 68%;
+    font-weight: 800;
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    margin-bottom: 2rem;
+    background-color: rgba(245, 245, 220, 0.8)
+}
+
+h1 {
+    width: fit-content;
+    height: fit-content;
+    font-size: 5rem;
+    margin: 0 auto;
+}
+
+main {
+    background-color: rgb(255, 228, 196, 0.6);
+}
+
+legend {
+    font-size: 3rem;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    height: fit-content;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(240, 248, 255);
+}
+
+label,
+::placeholder {
+    font-size: 2rem;
+    color: rgb(0, 33, 71);
+}
+
+button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+#check-btn {
+    background-color: rgb(0, 255, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#check-btn:hover {
+    box-shadow: 5px 5px 5px rgb(0, 128, 0);
+}
+
+#check-btn:active {
+    background-color: rgb(0, 128, 0);
+    box-shadow: none;
+}
+
+#clear-btn {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#clear-btn:hover {
+    box-shadow: 5px 5px 5px rgb(190, 0, 0);
+}
+
+#clear-btn:active {
+    background-color: rgb(190, 0, 0);
+    box-shadow: none;
+}
+
+#results-div {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
