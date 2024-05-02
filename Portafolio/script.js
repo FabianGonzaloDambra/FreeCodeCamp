@@ -90,7 +90,7 @@ const showFabian = (text) => {
         };
     }, 200);
 }
-showFabian(`Soy Fabián Dambra`);
-setInterval(() => showFabian(`Soy Fabian Dambra`), 5000);
-showFabian(`I'm Fabián Dambra`);
-setInterval(() => showFabian(`I'm Fabian Dambra`), 5000)
+showFabian(`Soy Fabián Gonzalo Dambra`);
+setInterval(() => showFabian(`Soy Fabián Gonzalo Dambra`), 5000);
+showFabian(`I'm Fabián Gonzalo Dambra`);
+setInterval(() => showFabian(`I'm Fabián Gonzalo Dambra`), 5000)
