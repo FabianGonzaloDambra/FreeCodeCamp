@@ -77,7 +77,7 @@ more.addEventListener(`click`, redirectToUrl);
 const showFabian = (text) => {
     let i = 0;
     const interval = setInterval(() => {
-        if (text === `Soy Fabian Dambra`) {
+        if (text === `Soy Fabián Gonzalo Dambra`) {
             fabian.innerText = text.slice(0, i);
             i++
         }
@@ -90,7 +90,7 @@ const showFabian = (text) => {
         };
     }, 200);
 }
-showFabian(`Soy Fabian Dambra`);
-setInterval(() => showFabian(`Soy Fabian Dambra`), 5000);
-showFabian(`I'm Fabian Dambra`);
-setInterval(() => showFabian(`I'm Fabian Dambra`), 5000)
+showFabian(`Soy Fabián Gonzalo Dambra`);
+setInterval(() => showFabian(`Soy Fabián Gonzalo Dambra`), 6000);
+showFabian(`I'm Fabián Gonzalo Dambra`);
+setInterval(() => showFabian(`I'm Fabián Gonzalo Dambra`), 6000)
