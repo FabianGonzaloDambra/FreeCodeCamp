@@ -39,7 +39,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px
+    gap: 20px;
+    z-index: 5;
 }
 
 .nav-div button {
@@ -50,6 +51,7 @@ html {
     border-radius: 20%;
     margin-left: 10px;
     font-size: 1.3rem;
+    transition: font-size 1s ease-in-out;
 }
 
 nav ul {
@@ -138,6 +140,7 @@ main ul li p {
     align-items: center;
     text-align: center;
     justify-content: center;
+    transition: font-size 1s ease-in-out;
 }
 
 main ul li p::before {
@@ -171,6 +174,7 @@ main button {
 
 button {
     color: var(--secondary-color);
+    transition: font-size 1s ease-in-out;
 }
 
 button:hover {
@@ -199,12 +203,14 @@ footer {
 li {
     font-size: 2rem;
     width: fit-content;
+    transition: font-size 1s ease-in-out;
 }
 
 h1 {
     height: 2rem;
     font-family: var(--primary-font);
     font-size: 3rem;
+    transition: font-size 1s ease-in-out;
 }
 
 h2,
@@ -212,6 +218,7 @@ h3 {
     font-family: var(--primary-font);
     font-size: 2rem;
     margin: 20px 0;
+    transition: font-size 1s ease-in-out;
 }
 
 
@@ -231,9 +238,38 @@ img {
     width: 12rem;
     height: 12rem;
     border: var(--secondary-color) solid;
+    transition: width 1s ease-in-out, height 1s ease-in-out;
 }
 
 header img {
     width: 15rem;
     height: 15rem;
+}
+
+@media screen and (max-width:500px) {
+    h1 {
+        font-size: 2rem;
+        transition: all 1s ease-in-out;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+        transition: all 1s ease-in-out;
+    }
+
+    li, button, .nav-div button {
+        font-size: 1rem;
+        transition: all 1s ease-in-out;
+    }
+
+    main ul li p {
+        width: 8rem;
+        transition: all 1s ease-in-out;
+    }
+
+    img {
+        width: 8rem;
+        height: 8rem;
+        transition: all 1s ease-in-out;
+    }
 }
